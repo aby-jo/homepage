@@ -206,6 +206,9 @@ footer .links{
     .project{
         margin: 3% 0;
     }
+    .projimage{
+        max-width: none;
+    }
     .footinfo h1{
         text-align: center;
     }
