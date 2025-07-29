@@ -1,0 +1,226 @@
+body{
+    margin: 0%;
+}
+img.profile-pic {
+  width: 100%;
+  height:fit-content;
+  display: block;
+  max-width: 500px;
+  object-fit: cover;
+}
+img.footer-pic{
+    max-width:600px;
+    width: 100%;
+    height:fit-content;
+    object-fit: cover;
+}
+.profile{
+    position: relative;
+}
+#about-overlay-text{
+    position: absolute;
+    bottom : 1%;
+    left: 5%;
+    color: white;
+    text-shadow: 5px 5px rgb(41, 39, 39);
+    font-size: 90px;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+    color: black;
+    padding-top: 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.3;
+
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff4e50;
+    transform: skewY(-10deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+.about{
+    max-width: 500px;
+    min-height: 400px;
+    align-self: center;
+    background-color: white;
+    box-shadow: 10px 10px gray;
+    max-height: fit-content;
+    padding-left: 1%;
+    position: relative;
+}
+.about p{
+    font-size: larger;
+}
+.about .links{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.content{
+    padding-left: 5%;
+}
+h1{
+    font-size: 50px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+.project{
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+}
+.project h2{
+    width: fit-content;
+}
+.projinfo{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 3%;
+}
+.projlink{
+    align-self: center;
+    margin: 3%;
+}
+.project p{
+    padding-left: 3%;
+}
+img.projimage{
+    max-width: 380px;
+    width: 100%;
+}
+footer{
+    display: flex;
+    padding: 5%;
+    justify-content: space-evenly;
+    background-color: #ff4e50;
+    color: white;
+    text-wrap: wrap;
+    font-size: 30px;
+}
+footer h1{
+    margin-top: 0%;
+}
+footer p{
+    margin: 0%;
+}
+.footinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+footer .contactinfo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1%;
+}
+footer .links{
+    display: flex;
+    gap:3%;
+}
+@media(max-width: 1024px){
+    img.profile-pic{
+        max-width: 400px;
+    }
+    #about-overlay-text{
+        font-size: 60px;
+        left: 10%;
+    }
+    .footinfo .links img{
+        width: 50px;
+    }
+     
+}
+@media (max-width: 600px) {
+  img.profile-pic {
+    max-width: 70vw;
+    max-height: fit-content;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5%;
+  }
+  img.footer-pic{
+    max-width: 100vw;
+    max-height: fit-content;
+    margin-top: 5%;
+  }
+  footer{
+    flex-wrap: wrap;
+  }
+  header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: #ff4e50;
+    transform: skewY(-20deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+  #about-overlay-text{
+    text-align: center;
+    left: 0%;
+    }
+    .about{
+        text-align: center;
+        box-shadow: none;
+    }
+    .about p{
+        padding: 0 1% 0 1%;
+    }
+    .about .links{
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+       
+    }
+    .about .links img{
+        min-width: 50px
+    }
+    .content{
+        padding: 0%;
+    }
+    .content h1{
+        text-align: center;
+    }
+    .content{
+        margin: 3% 3%;
+    }
+    .project{
+        margin: 3% 0;
+    }
+    .footinfo h1{
+        text-align: center;
+    }
+    .footinfo .address{
+        font-size: large;
+        margin: 5% 0;
+    }
+    .footinfo .contactinfo{
+        font-size: large;
+    }
+    .footinfo .links{
+        justify-content: center;
+        margin: 5% 0;
+    }
+    .footinfo .links img{
+        min-width: 50px
+    }
+}
